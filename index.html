@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NewsAPI V1</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- REQUIREMENTS
+        Page requires a key.js file with the following format
+        var APIKEY = "apikey from newsapi.org"
+    --> 
+    
+</head>
+<body>
+    <div class="container">
+        <form id="source" class="row text-center">
+            <div class="form-group">
+                <select id="selection">
+                    
+                </select>
+            </div>
+            <button type="submit" id="getHeadlines" onclick="getDescription()" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    
+    <div class="container" id="quoteInfo">
+        <div class="row text-center">
+            <h1 class>Headline News</h1>
+            <div id="description" class= "well col-xs-12 message">
+                <ul id="headlines"></ul>
+                
+            </div>
+        </div>
+    </div>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="key.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
